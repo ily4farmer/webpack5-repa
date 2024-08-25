@@ -1,0 +1,83 @@
+.button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fafafa;
+  font-weight: 700;
+  line-height: 17px;
+  transition: all ease-in-out 0.3s;
+
+  &__medium {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  &__small {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+
+  &__large {
+    font-size: 18px;
+    padding: 14px 16px;
+  }
+
+  &__default {
+    border: 1px solid #3754f1;
+    background: #3754f1;
+
+    &:hover {
+      background-color: #5b75ff;
+    }
+
+    &:active {
+      background-color: #132aab;
+    }
+  }
+
+  &__primary {
+    border: 1px solid #3754f1;
+    background: transparent;
+
+    &:hover {
+      background-color: #3754f1;
+    }
+
+    &:active {
+      border: 1px solid #132aab;
+      background-color: #132aab;
+    }
+  }
+
+  &__ghost {
+    border: 1px solid #6077a6;
+    background: transparent;
+
+    &:hover {
+      background-color: #6077a6;
+    }
+
+    &:active {
+      border: 1px solid #3a5281;
+      background-color: #3a5281;
+    }
+  }
+
+  &__disabled,
+  &__disabled:hover,
+  &__disabled:active {
+    cursor: not-allowed;
+    border: 1px solid #425376;
+    background: #425376;
+  }
+
+  &__loading {
+    display: block;
+    margin-right: 7px;
+
+    &-not {
+      display: none;
+    }
+  }
+}
