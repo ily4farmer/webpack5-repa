@@ -11,7 +11,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const nextConfig = {
-  includePaths: [join(__dirname, 'styles')], // Указываем путь к директории со стилями
+  // experimental: {
+  //   optimizeCss: true, // включает оптимизацию CSS
+  // },
+  includePaths: [join(__dirname, 'styles')],
+  // Указываем путь к директории со стилями
   reactStrictMode: true,
 };
 

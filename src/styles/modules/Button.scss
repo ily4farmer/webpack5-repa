@@ -1,9 +1,11 @@
+@import '../interface/variables.scss';
+
 .button {
   display: flex;
   align-items: center;
   cursor: pointer;
   border-radius: 8px;
-  color: #fafafa;
+  color: $white;
   font-weight: 700;
   line-height: 17px;
   transition: all ease-in-out 0.3s;
@@ -24,43 +26,43 @@
   }
 
   &__default {
-    border: 1px solid #3754f1;
-    background: #3754f1;
+    border: 1px solid $button-default;
+    background: $button-default;
 
     &:hover {
-      background-color: #5b75ff;
+      background-color: $button-hover;
     }
 
     &:active {
-      background-color: #132aab;
+      background-color: $button-active;
     }
   }
 
   &__primary {
-    border: 1px solid #3754f1;
+    border: 1px solid $button-default;
     background: transparent;
 
     &:hover {
-      background-color: #3754f1;
+      background-color: $button-default;
     }
 
     &:active {
-      border: 1px solid #132aab;
-      background-color: #132aab;
+      border: 1px solid $button-active;
+      background-color: $button-active;
     }
   }
 
   &__ghost {
-    border: 1px solid #6077a6;
+    border: 1px solid $ghost-hover;
     background: transparent;
 
     &:hover {
-      background-color: #6077a6;
+      background-color: $ghost-hover;
     }
 
     &:active {
-      border: 1px solid #3a5281;
-      background-color: #3a5281;
+      border: 1px solid $stroke-active;
+      background-color: $stroke-active;
     }
   }
 
@@ -68,8 +70,8 @@
   &__disabled:hover,
   &__disabled:active {
     cursor: not-allowed;
-    border: 1px solid #425376;
-    background: #425376;
+    border: 1px solid $button-not-active;
+    background: $button-not-active;
   }
 
   &__loading {

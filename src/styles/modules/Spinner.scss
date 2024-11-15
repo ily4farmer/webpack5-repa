@@ -1,3 +1,5 @@
+@import '../interface/variables.scss';
+
 .spinner {
   width: 48px;
   height: 48px;
@@ -8,11 +10,10 @@
   &::before,
   &::after {
     content: '';
-    box-sizing: border-box;
     position: absolute;
     inset: 0px;
     border-radius: 50%;
-    border: 5px solid #3754f1;
+    border: 5px solid $button-default;
     animation: prixClipFix 2s linear infinite;
   }
   &::after {

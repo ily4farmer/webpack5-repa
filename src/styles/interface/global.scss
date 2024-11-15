@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 * {
   box-sizing: border-box;
   font-style: normal !important;
@@ -14,7 +16,7 @@ body {
 body {
   position: relative;
   font-weight: 500;
-  background: #0b1529;
+  background: $primary-bg;
 }
 
 body::-webkit-scrollbar {
@@ -22,13 +24,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--background, #0b1529);
+  background: $primary-bg;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #6077a6;
+  background-color: $ghost-hover;
   border-radius: 20px;
-  border: 3px solid var(--background, #0b1529);
+  border: 3px solid $primary-bg;
 }
 
 ul,

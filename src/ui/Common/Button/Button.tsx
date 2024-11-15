@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { CSSProperties, ReactNode } from 'react';
 
-import { Spinner } from '~ui/Spinner/Spinner';
+import { Spinner } from '~ui/Common/Spinner/Spinner';
 
 type ButtonProps = {
   children?: ReactNode;

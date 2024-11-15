@@ -1,0 +1,81 @@
+@import '../../interface/variables.scss';
+
+.input {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  color: $white;
+  font-weight: 400;
+  background: inherit;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::placeholder {
+    color: $text-input;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-weight: 300;
+    color: $white;
+    margin: 0 0 5px 16px;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $primary-bg;
+    border: 1px solid $stroke-fields;
+    padding-right: 10px;
+    border-radius: 8px;
+    transition:
+      background-color 0.3s,
+      border-color 0.3s;
+
+    &:focus-within {
+      border: 1px solid $stroke-active;
+    }
+
+    &-disabled {
+      background-color: rgb(128, 128, 128);
+      opacity: 0.6;
+      border-radius: 8px;
+      cursor: not-allowed;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-error {
+      border-color: $error;
+    }
+  }
+
+  &__not-loading {
+    display: none;
+  }
+}

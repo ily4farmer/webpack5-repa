@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ReactNode } from 'react';
+import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
 
 type FlexProps = {
   alignItems?: 'center' | 'flex-end' | 'flex-start';
@@ -13,6 +13,8 @@ type FlexProps = {
     | 'space-between'
     | 'space-around'
     | 'space-evenly';
+  onClick?: MouseEventHandler<HTMLHeadingElement>;
+  style?: CSSProperties;
 };
 
 export const Flex = ({
@@ -21,8 +23,13 @@ export const Flex = ({
   className,
   flexDirection,
   justifyContent,
+  onClick,
+  style,
 }: FlexProps) => (
   <div
+    style={style}
+    onClick={onClick}
+    data-testid="flex"
     className={clsx(className, 'flex', {
       'flex__ai-center': alignItems === 'center',
       'flex__ai-end': alignItems === 'flex-end',

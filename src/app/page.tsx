@@ -1,6 +1,4 @@
-import { Button } from '~ui/Button/Button';
-import { Flex } from '~ui/Flex/Flex';
-import { Spinner } from '~ui/Spinner/Spinner';
+import { Button, Flex, Input, Spinner, Switch } from '~ui';
 
 export default function Home() {
   return (
@@ -27,6 +25,9 @@ export default function Home() {
         <Spinner size="medium" />
         <Spinner size="small" />
         <Spinner size="large" />
+
+        <Input isLoading label="fdsfds" placeholder="fdsfd" type="number" />
+        <Switch />
       </Flex>
     </main>
   );
