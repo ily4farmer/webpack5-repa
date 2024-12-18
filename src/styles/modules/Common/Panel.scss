@@ -1,0 +1,16 @@
+.pannel {
+  border: #1c2d50;
+  border-radius: 8px;
+
+  &__header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #1c2d50;
+    border-radius: 8px 8px 0px 0px;
+    background: #111f39;
+  }
+
+  &__content {
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+  }
+}

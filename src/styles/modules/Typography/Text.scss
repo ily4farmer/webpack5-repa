@@ -1,21 +1,21 @@
 @import '../../interface/variables.scss';
 
-.title {
+.text {
   color: $white;
-  font-weight: 700;
-  line-height: 120%;
+  font-size: 16px;
+  font-weight: 500;
 
-  &__h1 {
-    font-size: 26px;
+  &__primary {
+    color: $ghost-hover;
   }
 
-  &__h2 {
-    font-size: 20px;
+  &__bold {
+    font-weight: 700;
   }
 
-  &__h3 {
-    font-size: 16px;
-    font-weight: 600;
+  &__small {
+    font-size: 12px;
+    font-weight: 400;
   }
 
   &__left {

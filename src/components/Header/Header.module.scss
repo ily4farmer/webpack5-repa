@@ -1,0 +1,16 @@
+.header {
+  padding: 18px;
+  width: 100%;
+  position: sticky;
+  background-color: #111f39;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.link {
+  cursor: pointer;
+}

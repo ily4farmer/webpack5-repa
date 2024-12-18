@@ -15,6 +15,7 @@ type ButtonProps = {
   style?: CSSProperties;
   type?: 'button' | 'submit' | 'reset';
   variant?: 'default' | 'primary' | 'ghost';
+  icon?: ReactNode;
 };
 
 export const Button = ({
@@ -25,6 +26,7 @@ export const Button = ({
   onClick,
   size = 'medium',
   variant = 'default',
+  icon,
   ...props
 }: ButtonProps) => (
   <button
@@ -45,6 +47,8 @@ export const Button = ({
     })}
     {...props}
   >
+    {icon && <div className="button__icon">{icon}</div>}
+
     <div
       data-testid="button-loader"
       className={clsx('button__loading', {

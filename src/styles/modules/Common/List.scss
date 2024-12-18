@@ -1,0 +1,24 @@
+@import '../../interface/variables.scss';
+
+.list {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+
+    &--bordered {
+      border-bottom: 1px solid #1c2d50;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 6px;
+  }
+}
