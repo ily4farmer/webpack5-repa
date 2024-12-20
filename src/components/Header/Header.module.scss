@@ -1,8 +1,10 @@
+@import '../../styles/interface/variables.scss';
+
 .header {
   padding: 18px;
   width: 100%;
   position: sticky;
-  background-color: #111f39;
+  background-color: $dedicated-block;
 }
 
 .navigation {
@@ -13,4 +15,9 @@
 
 .link {
   cursor: pointer;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: $stroke-active;
+  }
 }

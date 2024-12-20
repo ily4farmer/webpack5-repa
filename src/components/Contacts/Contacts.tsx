@@ -1,15 +1,13 @@
 import { Container, Divider } from '~ui';
-import { ContactsList } from './ContactsList';
 
 import style from './Contacts.module.scss';
+import { ContactsList } from './ContactsList';
 
-export const Contacts = () => {
-  return (
-    <section className={style.section}>
-      <Container>
-        <Divider>Контакты</Divider>
-        <ContactsList />
-      </Container>
-    </section>
-  );
-};
+export const Contacts = () => (
+  <footer className={style.footer}>
+    <Container>
+      <Divider>Контакты</Divider>
+      <ContactsList />
+    </Container>
+  </footer>
+);

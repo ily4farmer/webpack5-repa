@@ -11,7 +11,7 @@ export const telegram = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const MailIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg fill="none" viewBox="0 0 22 22" {...props}>
+  <svg fill="none" viewBox="0 0 22 22" width={22} height={22} {...props}>
     <defs>
       <clipPath id="a">
         <path fill="#fff" fill-opacity="0" d="M0 0h24v24H0z" />
@@ -23,6 +23,52 @@ export const MailIcon = (props: SVGProps<SVGSVGElement>) => (
         fill="#fff"
         fill-opacity=".5"
         d="M21.8 3.8H2.1c-.4 0-.7.3-.7.7v15c0 .4.3.8.8.8h19.4c.5 0 .8-.4.8-.8v-15c0-.4-.3-.8-.8-.8Zm-1 2.5v12.3H3.2V6.3l-.7-.5 1-1.1 1 .7h15l1-.8 1 1.2-.7.5Zm-1.3-.9L12 11.3 4.5 5.4l-1-.8-1 1.2.7.5 8 6.3a1.3 1.3 0 0 0 1.6 0l8-6.3.6-.5-.9-1.1-1 .7Z"
+      />
+    </g>
+  </svg>
+);
+
+export const TelegramIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" width={22} height={22} {...props}>
+    <path
+      fill="#fff"
+      d="M20.5 2c-.4 0-1 0-1.4.3l-16.6 8c-1 .4-1.6 1.5-1.5 2.5.1 1 .9 2 2 2.3l2.8.7c1.2.3 2.4 0 3.3-.6 0 1.1.3 2.2 1.3 2.8l6.8 3.7a3 3 0 0 0 4.3-2.3L23 5c.1-1.6-1-2.8-2.5-3zm-.2 2.5c.1 0 .2 0 .2.2L19 19.1c0 .4-.4.5-.7.3L11.7 16c-.2-.1-.2-.4 0-.6l5-5.2A1.3 1.3 0 0 0 15 8.2l-7.2 5c-.4.2-1 .3-1.4.2l-2.8-.7-.1-.1v-.1l16.7-8h.1z"
+    />
+  </svg>
+);
+
+export const WhatsAppIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" viewBox="0 0 22 22" width={22} height={22} {...props}>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" fill-opacity="0" d="M0 0h24v24H0z" />
+      </clipPath>
+    </defs>
+    <path fill="none" d="M0 0h24v24H0z" />
+    <g clip-path="url(#a)">
+      <path
+        fill="#fff"
+        fill-opacity=".5"
+        fill-rule="evenodd"
+        d="M19.4 4.6A10.5 10.5 0 0 1 12 22.5c-1.7 0-3.3-.4-4.7-1.1H3.7a1 1 0 0 1-1-1.1v-3.6A10.4 10.4 0 0 1 2.2 8a10.3 10.3 0 0 1 5.6-5.6c1.3-.5 2.6-.8 4-.8h.1a10.4 10.4 0 0 1 7.4 3ZM12 20.7a8.6 8.6 0 0 0 8.7-8.7 8.7 8.7 0 0 0-5.3-8 8.6 8.6 0 0 0-12.1 8c0 1.4.3 2.8 1 4l.1.3v3.3h3.5c1.2.8 2.6 1.1 4 1.1h.1Zm3-7.5 1.7.9c.3 0 .4.2.5.3l-.1 1.2c-.3.6-1.3 1.2-1.8 1.2-.8.1-1.4 0-3-.6-2.7-1.1-4.4-3.8-4.5-4a5 5 0 0 1-1-2.6c0-1.3.6-1.9.9-2.2l.6-.3H9c.1 0 .3 0 .5.5a145 145 0 0 0 .8 2.3c-.2.5-.4.7-.6.9-.2.2-.3.3-.1.6a7 7 0 0 0 3.5 3c.3.2.4.1.6 0l.8-1c.1-.3.3-.3.5-.2Z"
+      />
+    </g>
+  </svg>
+);
+
+export const GitHubIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" viewBox="0 0 24 24" width={22} height={22} {...props}>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" fill-opacity="0" d="M0 0h24v24H0z" />
+      </clipPath>
+    </defs>
+    <path fill="none" d="M0 0h24v24H0z" />
+    <g clip-path="url(#a)">
+      <path
+        fill="#fff"
+        fill-opacity=".5"
+        d="M12 1.8a10.5 10.5 0 0 0-3.5 20.4c.6.1.5-.3.5-.6v-1.8c-3.2.4-3.3-1.7-3.5-2-.5-.8-1.5-1-1.2-1.3.7-.4 1.5 0 2.3 1.3.7 1 1.9.8 2.5.6.1-.5.4-1 .8-1.4-3.3-.6-4.7-2.6-4.7-5 0-1.1.4-2.2 1.1-3-.4-1.5.1-2.7.2-2.9 1.3-.1 2.7 1 2.8 1L12 7c1 0 1.9 0 2.7.3.2-.2 1.5-1.2 2.8-1 0 .1.6 1.3.1 2.7.8.9 1.2 2 1.2 3.1 0 2.4-1.4 4.4-4.7 5a3 3 0 0 1 .9 2.1v2.7c0 .2 0 .4.3.4A10.5 10.5 0 0 0 12 1.8Z"
       />
     </g>
   </svg>

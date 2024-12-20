@@ -8,6 +8,7 @@ import { Spinner } from '~ui/Common/Spinner/Spinner';
 type ButtonProps = {
   children?: ReactNode;
   className?: string;
+  icon?: ReactNode;
   isDisabled?: boolean;
   isLoading?: boolean;
   onClick?: () => void;
@@ -15,18 +16,17 @@ type ButtonProps = {
   style?: CSSProperties;
   type?: 'button' | 'submit' | 'reset';
   variant?: 'default' | 'primary' | 'ghost';
-  icon?: ReactNode;
 };
 
 export const Button = ({
   children,
   className,
+  icon,
   isDisabled = false,
   isLoading,
   onClick,
   size = 'medium',
   variant = 'default',
-  icon,
   ...props
 }: ButtonProps) => (
   <button

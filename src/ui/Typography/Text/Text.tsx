@@ -4,10 +4,10 @@ import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
 type TextProps = {
   children?: ReactNode;
   className?: string;
+  color?: 'white' | 'primary';
   isBold?: boolean;
   onClick?: MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLParagraphElement>;
   position?: 'left' | 'right' | 'center';
-  color?: 'white' | 'primary';
   size?: 'medium' | 'small';
   style?: CSSProperties;
   variant?: 'text' | 'paragraph';
@@ -16,11 +16,11 @@ type TextProps = {
 export const Text = ({
   children,
   className,
+  color = 'white',
   isBold = false,
   position = 'left',
   size = 'medium',
   variant = 'text',
-  color = 'white',
   ...props
 }: TextProps) => {
   const classTitle = clsx(className, 'text', {

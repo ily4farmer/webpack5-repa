@@ -7,10 +7,8 @@ type ContainerProps = {
   style?: CSSProperties;
 };
 
-export const Container = ({ children, className, style }: ContainerProps) => {
-  return (
-    <div className={clsx('container', className)} style={style}>
-      {children}
-    </div>
-  );
-};
+export const Container = ({ children, className, style }: ContainerProps) => (
+  <div className={clsx('container', className)} style={style}>
+    {children}
+  </div>
+);

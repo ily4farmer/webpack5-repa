@@ -1,3 +1,6 @@
+export * from './About';
 export * from './Contacts';
+export * from './Experience';
 export * from './Header';
-export * from './Position';
+export * from './Main';
+export * from './Skills';

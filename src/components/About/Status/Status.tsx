@@ -13,6 +13,16 @@ import { StatusItem } from './StatusItem';
 const statusInfo: ListItemProps[] = [
   {
     icon: <LocationIcon />,
+    key: 6,
+    value: <StatusItem title="Полное имя" value="Лесников Алексей Кириллович" />,
+  },
+  {
+    icon: <LocationIcon />,
+    key: 5,
+    value: <StatusItem title="Возраст" value="24 года" />,
+  },
+  {
+    icon: <LocationIcon />,
     key: 1,
     value: <StatusItem title="Место проживания" value="Россия г. Москва" />,
   },
@@ -24,7 +34,9 @@ const statusInfo: ListItemProps[] = [
   {
     icon: <ScheduleIcon />,
     key: 3,
-    value: <StatusItem title="График работы" value="Полный день, гибкий график" />,
+    value: (
+      <StatusItem title="График работы" value="Полный день, гибкий график, удаленная работа" />
+    ),
   },
   {
     icon: <HomeIcon />,

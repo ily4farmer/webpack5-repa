@@ -7,9 +7,9 @@ export type ListItemProps = {
 };
 
 export type ListProps = {
+  className?: string;
   isBordered?: boolean;
   list: ListItemProps[];
-  title?: string;
-  className?: string;
   style?: CSSProperties;
+  title?: string;
 };
